@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="分数:   "
+        android:textColor="@color/text"
+        android:textSize="32dp"
+        android:id="@+id/temptemp"
+        android:layout_height="wrap_content" />
+    <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/recordtextscore"
+        android:layout_toRightOf="@+id/temptemp"
+        android:textSize="32dp"
+        android:textColor="#a9a93d"
+        android:layout_height="wrap_content" />
+    <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/recordtexttime"
+        android:textColor="@color/text"
+        android:layout_below="@+id/recordtextscore"
+        android:layout_alignParentRight="true"
+        android:textSize="12dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

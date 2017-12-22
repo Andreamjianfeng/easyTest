@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_published"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jianfeng.jianfengdriving.PublishedActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#3793c7">
+            <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:id="@+id/published_no"
+                android:textSize="20sp" />
+
+            <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/published_ok"
+                android:layout_marginRight="5dp"
+                android:text="发表"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/published_say_tv"
+            android:hint="say...."
+            android:layout_height="wrap_content" />
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/my_grid"
+            android:horizontalSpacing="4dp"
+            android:verticalSpacing="5dp"
+            android:numColumns="4"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/published_loading_re"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <com.jianfeng.jianfengdriving.Myjava.SoGouBrowserLoading
+            android:layout_width="match_parent"
+            android:id="@+id/published_loadingView"
+            android:layout_height="match_parent" />
+        <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+            android:layout_width="wrap_content"
+            android:text="真正上传。。。。"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/text"
+            android:layout_marginBottom="60dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_activict"
+    android:id="@+id/main_re"
+    tools:context="com.jianfeng.jianfengdriving.SimulationActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/simulation_toolbar"
+        style="@style/use_Toolbar">
+    </android.support.v7.widget.Toolbar>
+
+    <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+        android:id="@+id/whicharticle"
+        android:textColor="@color/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simulation_toolbar"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/shitu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/whicharticle"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:paddingTop="10dp" />
+
+    <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+        android:id="@+id/titlesaid"
+        android:textColor="@color/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shitu"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="10dp"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlesaid"
+        android:layout_gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:paddingRight="4dp">
+
+        <RadioGroup
+            android:id="@+id/oneradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/radiochooseA"
+               style="@style/use_RadioButton" />
+
+            <RadioButton
+                android:id="@+id/radiochooseB"
+                style="@style/use_RadioButton" />
+
+            <RadioButton
+                android:id="@+id/radiochooseC"
+                style="@style/use_RadioButton" />
+
+            <RadioButton
+                android:id="@+id/radiochooseD"
+                style="@style/use_RadioButton" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/morecheckbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <CheckBox
+                android:id="@+id/checkBoxchooseA"
+                style="@style/use_CheckBox" />
+
+            <CheckBox
+                android:id="@+id/checkBoxchooseB"
+                style="@style/use_CheckBox" />
+
+            <CheckBox
+                android:id="@+id/checkBoxchooseC"
+                style="@style/use_CheckBox" />
+
+            <CheckBox
+                android:id="@+id/checkBoxchooseD"
+                style="@style/use_CheckBox" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_activict"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/tempbty"
+            style="@style/use_test_btn"
+            android:text="结束答题" />
+
+        <Button
+            android:id="@+id/ontitle"
+            style="@style/use_test_btn"
+            android:text="@string/back_topic" />
+
+        <Button
+            android:id="@+id/nexttitle"
+            style="@style/use_test_btn"
+            android:text="@string/nest_topic" />
+
+        <Button
+            android:id="@+id/answertemp"
+            style="@style/use_test_btn"
+            android:text="提示" />
+    </LinearLayout>
+
+</RelativeLayout>

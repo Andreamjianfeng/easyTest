@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">易考驾</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="nest_topic">下一题</string>
+    <string name="back_topic">上一题</string>
+    <string name="temp">test</string>
+    <string name="styled_text"> <b><i>易考驾</i></b></string>
+    <string name="title_activity_space">SpaceActivity</string>
+</resources>

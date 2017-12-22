@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_activict"
+    tools:context="com.jianfeng.jianfengdriving.RecordActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/record_toolbar"
+        style="@style/use_Toolbar" >
+    </android.support.v7.widget.Toolbar>
+
+    <com.jianfeng.jianfengdriving.Myjava.MyListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listrecord"
+        android:layout_below="@+id/record_toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

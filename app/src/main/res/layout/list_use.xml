@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="40dp"
+        android:src="@drawable/gotext"
+        android:id="@+id/gotext"
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/gonestactivity"
+        android:layout_toRightOf="@+id/gotext"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+            android:layout_width="match_parent"
+            android:text="开始"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/text"
+            android:id="@+id/listtext"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="20dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/gonestactivity"
+        android:src="@drawable/gonextactivity"
+        android:layout_alignParentRight="true"
+        android:layout_height="20dp" />
+</RelativeLayout>

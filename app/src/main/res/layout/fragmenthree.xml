@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+        android:layout_width="match_parent"
+        android:text="科目三视频教学"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:textSize="22dp"
+        android:id="@+id/three_go_kai"
+        android:layout_height="wrap_content" />
+    <GridView
+        android:id="@+id/my_grid_use"
+        android:layout_below="@+id/three_go_kai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="15dp"
+        android:numColumns="2"
+        android:verticalSpacing="15dp" />
+</RelativeLayout>

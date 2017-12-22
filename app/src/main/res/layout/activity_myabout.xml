@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_activict"
+    tools:context="com.jianfeng.jianfengdriving.MyaboutActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myabout_toolbar"
+        style="@style/use_Toolbar" >
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/myabout_toolbar"
+        android:layout_height="wrap_content">
+
+    <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+        android:id="@+id/text11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:textSize="22sp"
+        android:textColor="@color/text"
+        android:textStyle="normal" />
+    </ScrollView>
+</RelativeLayout>

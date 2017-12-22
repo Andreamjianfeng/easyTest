@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout style="@style/use_layout_two">
+
+            <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+                style="@style/two_text"
+                android:textColor="@color/text"
+                android:text="科目二视频教学"
+                android:textSize="22dp" />
+
+            <LinearLayout style="@style/use_layout">
+
+                <LinearLayout style="@style/use_layout_two">
+
+                    <ImageView
+                        android:id="@+id/Two_subjects1"
+                        style="@style/two_img" />
+
+                    <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+                        style="@style/two_text"
+                        android:textColor="@color/text"
+                        android:text="倒车入库" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/use_layout_two">
+
+                    <ImageView
+                        android:id="@+id/Two_subjects2"
+                        style="@style/two_img" />
+
+                    <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+                        style="@style/two_text"
+                        android:textColor="@color/text"
+                        android:text="侧方位停车" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/use_layout">
+
+                <LinearLayout style="@style/use_layout_two">
+
+                    <ImageView
+                        android:id="@+id/Two_subjects3"
+                        style="@style/two_img" />
+
+                    <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+                        style="@style/two_text"
+                        android:textColor="@color/text"
+                        android:text="曲线行驶" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/use_layout_two">
+
+                    <ImageView
+                        android:id="@+id/Two_subjects4"
+                        style="@style/two_img" />
+
+                    <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+                        style="@style/two_text"
+                        android:textColor="@color/text"
+                        android:text="直角转弯" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/use_layout">
+
+                <LinearLayout style="@style/use_layout_two">
+
+                    <ImageView
+                        android:id="@+id/Two_subjects5"
+                        style="@style/two_img" />
+
+                    <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+                        style="@style/two_text"
+                        android:textColor="@color/text"
+                        android:text="上坡路定点停车与坡道起步" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/use_layout_two"></LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

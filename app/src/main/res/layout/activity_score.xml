@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_activict"
+    tools:context="com.jianfeng.jianfengdriving.ScoreActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/score_toolbar"
+        style="@style/use_Toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linerscore"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/call"
+        android:paddingBottom="16dp"
+        android:layout_centerHorizontal="true">
+
+        <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你的总分为"
+            android:textColor="@color/text"
+            android:textSize="32sp" />
+
+        <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+            android:id="@+id/scoretext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:textColor="#00ff00"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        tools:ignore="NotSibling" />
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:background="@drawable/shape_button"
+         android:layout_alignParentBottom="true"
+         android:layout_marginLeft="26dp"
+         android:layout_marginRight="26dp"
+         android:id="@+id/share_score"
+         android:layout_marginBottom="10dp"
+         android:layout_height="60dp">
+        <com.jianfeng.jianfengdriving.Myjava.MyFrontTextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/text"
+            android:text="分享"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+     </RelativeLayout>
+</RelativeLayout>

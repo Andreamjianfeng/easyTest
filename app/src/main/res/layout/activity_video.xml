@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_activict"
+    tools:context="com.jianfeng.jianfengdriving.VideoActivity">
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/video_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="#0f8ccf"-->
+        <!--android:minHeight="?attr/actionBarSize"/>-->
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/videoplay"
+        android:layout_height="match_parent" />
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_below="@+id/videoplay"-->
+        <!--android:paddingTop="15dp"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:id="@+id/videotext"-->
+            <!--android:text="视频介绍"-->
+            <!--android:layout_height="match_parent" />-->
+    <!--</ScrollView>-->
+
+</RelativeLayout>
