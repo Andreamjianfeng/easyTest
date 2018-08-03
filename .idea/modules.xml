@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JianfengDriving.iml" filepath="$PROJECT_DIR$/JianfengDriving.iml" />
+      <module fileurl="file://D:\GitHub\easyTest\JianfengDriving.iml" filepath="D:\GitHub\easyTest\JianfengDriving.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\GitHub\easyTest\app\app.iml" filepath="D:\GitHub\easyTest\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easyTest.iml" filepath="$PROJECT_DIR$/easyTest.iml" />
     </modules>
   </component>
 </project>
